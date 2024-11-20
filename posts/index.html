@@ -145,6 +145,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">go-zero集成kafka的学习-1
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>消费者通过下述函数创建
+kq.MustNewQueue(c KqConf, handler ConsumeHandler, opts ...QueueOption) ConsumeHandler的原型为
+ConsumeHandler interface { Consume(ctx context.Context, key, value string) error } 当KqConf中的ForceCommit默认值为true, 当它为false时, Consume()返回的err不为nil, 则不ack
+阅读了下go-zero的go-queue源码, 似乎没有重试机制
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-20 00:00:00 +0000 UTC'>November 20, 2024</span>&nbsp;·&nbsp;高强度冲浪选手</footer>
+  <a class="entry-link" aria-label="post link to go-zero集成kafka的学习-1" href="https://highfreqsurfer.github.io/posts/kafka_study_1/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">kill -2和-15的区别
     </h2>
   </header>
