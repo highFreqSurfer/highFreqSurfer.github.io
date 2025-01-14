@@ -9,10 +9,24 @@
       <url>https://highfreqsurfer.github.io/images/papermod-cover.png</url>
       <link>https://highfreqsurfer.github.io/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.139.0</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 20 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://highfreqsurfer.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github Actions</title>
+      <link>https://highfreqsurfer.github.io/tags/github-actions/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://highfreqsurfer.github.io/tags/github-actions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://highfreqsurfer.github.io/tags/linux/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://highfreqsurfer.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Elasticsearch</title>
       <link>https://highfreqsurfer.github.io/tags/elasticsearch/</link>
@@ -32,13 +46,6 @@
       <link>https://highfreqsurfer.github.io/tags/kafka/</link>
       <pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://highfreqsurfer.github.io/tags/kafka/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://highfreqsurfer.github.io/tags/linux/</link>
-      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://highfreqsurfer.github.io/tags/linux/</guid>
       <description></description>
     </item>
   </channel>

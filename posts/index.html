@@ -145,6 +145,28 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">利用github actions构建内核并发布到指定仓库
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>笔者有台x230i，运行着archlinux。为了榨干其性能，内核使用了cachy os的内核。
+由于cachyos的内核只提供最低x86-64v3的预编译包，而x230的cpu属于x86-64v2，无法使用，本机编译经过裁剪的内核也需要一个小时，于是便想利用github actions去编译。
+用到的项目有：
+highFreqSurfer/build-aur-action
+highFreqSurfer/check-aur-package-update
+s0/git-publish-subdir-action
+成品可以参考highFreqSurfer/build-cachyos-kernel-arch-package-for-x230
+feature有:
+检测aur包更新 检测到更新才进行构建 生产用于搭建仓库的repo db文件 推送编译产物到指定的仓库和分支 在/etc/pacman.conf加入你的仓库，如
+[repo] SigLevel = Optional TrustAll Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/build-cachyos-kernel-arch-package-for-x230/package 然后就可以通过pacman去安装仓库里的包
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-01-14 00:00:00 +0000 UTC'>January 14, 2025</span>&nbsp;·&nbsp;高强度冲浪选手</footer>
+  <a class="entry-link" aria-label="post link to 利用github actions构建内核并发布到指定仓库" href="https://highfreqsurfer.github.io/posts/use_github_action_to_build_aur_package/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">elastics的学习-1
     </h2>
   </header>
@@ -195,7 +217,7 @@ signal.Notify(c, syscall.SIGINT, syscall.SIGTERM) sig := &lt;-c fmt.Printf(&#34;
     </main>
     
 <footer class="footer">
-        <span>&copy; 2024 <a href="https://highfreqsurfer.github.io/">^^,</a></span> · 
+        <span>&copy; 2025 <a href="https://highfreqsurfer.github.io/">^^,</a></span> · 
 
     <span>
         Powered by

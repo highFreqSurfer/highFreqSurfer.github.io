@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Github Actions on ^^,</title>
+    <link>https://highfreqsurfer.github.io/tags/github-actions/</link>
+    <description>Recent content in Github Actions on ^^,</description>
+    <image>
+      <title>^^,</title>
+      <url>https://highfreqsurfer.github.io/images/papermod-cover.png</url>
+      <link>https://highfreqsurfer.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>zh</language>
+    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://highfreqsurfer.github.io/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用github actions构建内核并发布到指定仓库</title>
+      <link>https://highfreqsurfer.github.io/posts/use_github_action_to_build_aur_package/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://highfreqsurfer.github.io/posts/use_github_action_to_build_aur_package/</guid>
+      <description>&lt;p&gt;笔者有台x230i，运行着archlinux。为了榨干其性能，内核使用了cachy os的内核。&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://i1.hdslb.com/bfs/new_dyn/watermark/2076d258175a0cfa34844ec5c6a8b79e238075833.png@1192w.avif&#34;&gt;&lt;/p&gt;
+&lt;p&gt;由于cachyos的内核只提供最低x86-64v3的预编译包，而x230的cpu属于x86-64v2，无法使用，本机编译经过裁剪的内核也需要一个小时，于是便想利用github actions去编译。&lt;/p&gt;
+&lt;p&gt;用到的项目有：&lt;/p&gt;
+&lt;p&gt;highFreqSurfer/build-aur-action&lt;/p&gt;
+&lt;p&gt;highFreqSurfer/check-aur-package-update&lt;/p&gt;
+&lt;p&gt;s0/git-publish-subdir-action&lt;/p&gt;
+&lt;p&gt;成品可以参考highFreqSurfer/build-cachyos-kernel-arch-package-for-x230&lt;/p&gt;
+&lt;p&gt;feature有:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;检测aur包更新&lt;/li&gt;
+&lt;li&gt;检测到更新才进行构建&lt;/li&gt;
+&lt;li&gt;生产用于搭建仓库的repo db文件&lt;/li&gt;
+&lt;li&gt;推送编译产物到指定的仓库和分支&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在/etc/pacman.conf加入你的仓库，如&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[repo]
+SigLevel = Optional TrustAll
+Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/build-cachyos-kernel-arch-package-for-x230/package
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后就可以通过pacman去安装仓库里的包&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
