@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
   <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
   
-  <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -297,6 +298,32 @@ signal.Notify(c, syscall.SIGINT, syscall.SIGTERM) sig := &lt;-c fmt.Printf(&#34;
 </body>
 
 <script>
+  var pjax = new Pjax({
+    selectors: [".main"]
+  })
+
+  pjax._handleResponse = pjax.handleResponse;
+  pjax.handleResponse = function (responseText, request, href, options) {
+    if (request.responseText.match("<html")) {
+      if (responseText) {
+        
+        let newDom = new DOMParser().parseFromString(responseText, 'text/html');
+        
+        let bodyClass = newDom.body.className;
+        document.body.setAttribute("class", bodyClass)
+      }
+      
+      pjax._handleResponse(responseText, request, href, options);
+    } else {
+      
+    }
+  }
+
+  document.addEventListener('pjax:complete', () => {
+    
+    window.Stack.init();
+  })
+
 </script>
 
 </html>
