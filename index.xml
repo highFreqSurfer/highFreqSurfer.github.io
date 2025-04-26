@@ -11,8 +11,17 @@
     </image>
     <generator>Hugo -- 0.147.0</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://highfreqsurfer.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>寒窗苦读16年不能找到体面工作，羞耻的应该是这个国家而不是这个人</title>
+      <link>https://highfreqsurfer.github.io/posts/shame_on_this_country/</link>
+      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://highfreqsurfer.github.io/posts/shame_on_this_country/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>利用github actions构建内核并发布到指定仓库</title>
       <link>https://highfreqsurfer.github.io/posts/use_github_action_to_build_aur_package/</link>

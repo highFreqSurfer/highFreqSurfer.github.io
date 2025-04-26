@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir=" auto">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
   <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
@@ -11,39 +11,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>利用github actions构建内核并发布到指定仓库 | ^^,</title>
-<meta name="keywords" content="github actions, linux">
-<meta name="description" content="笔者有台x230i，运行着archlinux。为了榨干其性能，内核使用了cachy os的内核。
+<title>寒窗苦读16年不能找到体面工作，羞耻的应该是这个国家而不是这个人 | ^^,</title>
+<meta name="keywords" content="fk tg">
+<meta name="description" content="
 
-由于cachyos的内核只提供最低x86-64v3的预编译包，而x230的cpu属于x86-64v2，无法使用，本机编译经过裁剪的内核也需要一个小时，于是便想利用github actions去编译。
-用到的项目有：
-highFreqSurfer/build-aur-action
-highFreqSurfer/check-aur-package-update
-s0/git-publish-subdir-action
-成品可以参考highFreqSurfer/build-cachyos-kernel-arch-package-for-x230
-feature有:
-
-检测aur包更新
-检测到更新才进行构建
-生产用于搭建仓库的repo db文件
-推送编译产物到指定的仓库和分支
-
-在/etc/pacman.conf加入你的仓库，如
-[repo]
-SigLevel = Optional TrustAll
-Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/build-cachyos-kernel-arch-package-for-x230/package
-然后就可以通过pacman去安装仓库里的包">
+">
 <meta name="author" content="高强度冲浪选手">
-<link rel="canonical" href="https://highfreqsurfer.github.io/posts/use_github_action_to_build_aur_package/">
+<link rel="canonical" href="http://localhost:1313/posts/shame_of_this_country/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://highfreqsurfer.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://highfreqsurfer.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://highfreqsurfer.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://highfreqsurfer.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://highfreqsurfer.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://highfreqsurfer.github.io/posts/use_github_action_to_build_aur_package/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/shame_of_this_country/">
 <noscript>
     <style>
         #theme-toggle,
@@ -80,50 +63,23 @@ Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/bui
         }
 
     </style>
-</noscript><meta property="og:url" content="https://highfreqsurfer.github.io/posts/use_github_action_to_build_aur_package/">
+</noscript><meta property="og:url" content="http://localhost:1313/posts/shame_of_this_country/">
   <meta property="og:site_name" content="^^,">
-  <meta property="og:title" content="利用github actions构建内核并发布到指定仓库">
-  <meta property="og:description" content="笔者有台x230i，运行着archlinux。为了榨干其性能，内核使用了cachy os的内核。
-由于cachyos的内核只提供最低x86-64v3的预编译包，而x230的cpu属于x86-64v2，无法使用，本机编译经过裁剪的内核也需要一个小时，于是便想利用github actions去编译。
-用到的项目有：
-highFreqSurfer/build-aur-action
-highFreqSurfer/check-aur-package-update
-s0/git-publish-subdir-action
-成品可以参考highFreqSurfer/build-cachyos-kernel-arch-package-for-x230
-feature有:
-检测aur包更新 检测到更新才进行构建 生产用于搭建仓库的repo db文件 推送编译产物到指定的仓库和分支 在/etc/pacman.conf加入你的仓库，如
-[repo] SigLevel = Optional TrustAll Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/build-cachyos-kernel-arch-package-for-x230/package 然后就可以通过pacman去安装仓库里的包">
+  <meta property="og:title" content="寒窗苦读16年不能找到体面工作，羞耻的应该是这个国家而不是这个人">
+  <meta property="og:description" content=" ">
   <meta property="og:locale" content="zh">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-01-14T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-01-14T00:00:00+00:00">
-    <meta property="article:tag" content="Github Actions">
-    <meta property="article:tag" content="Linux">
-      <meta property="og:image" content="https://highfreqsurfer.github.io/images/papermod-cover.png">
+    <meta property="article:published_time" content="2025-04-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-26T00:00:00+00:00">
+    <meta property="article:tag" content="Fk Tg">
+      <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://highfreqsurfer.github.io/images/papermod-cover.png">
-<meta name="twitter:title" content="利用github actions构建内核并发布到指定仓库">
-<meta name="twitter:description" content="笔者有台x230i，运行着archlinux。为了榨干其性能，内核使用了cachy os的内核。
+<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:title" content="寒窗苦读16年不能找到体面工作，羞耻的应该是这个国家而不是这个人">
+<meta name="twitter:description" content="
 
-由于cachyos的内核只提供最低x86-64v3的预编译包，而x230的cpu属于x86-64v2，无法使用，本机编译经过裁剪的内核也需要一个小时，于是便想利用github actions去编译。
-用到的项目有：
-highFreqSurfer/build-aur-action
-highFreqSurfer/check-aur-package-update
-s0/git-publish-subdir-action
-成品可以参考highFreqSurfer/build-cachyos-kernel-arch-package-for-x230
-feature有:
-
-检测aur包更新
-检测到更新才进行构建
-生产用于搭建仓库的repo db文件
-推送编译产物到指定的仓库和分支
-
-在/etc/pacman.conf加入你的仓库，如
-[repo]
-SigLevel = Optional TrustAll
-Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/build-cachyos-kernel-arch-package-for-x230/package
-然后就可以通过pacman去安装仓库里的包">
+">
 
 
 <script type="application/ld+json">
@@ -135,13 +91,13 @@ Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/bui
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "https://highfreqsurfer.github.io/posts/"
+      "item": "http://localhost:1313/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "利用github actions构建内核并发布到指定仓库",
-      "item": "https://highfreqsurfer.github.io/posts/use_github_action_to_build_aur_package/"
+      "name": "寒窗苦读16年不能找到体面工作，羞耻的应该是这个国家而不是这个人",
+      "item": "http://localhost:1313/posts/shame_of_this_country/"
     }
   ]
 }
@@ -150,31 +106,31 @@ Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/bui
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "利用github actions构建内核并发布到指定仓库",
-  "name": "利用github actions构建内核并发布到指定仓库",
-  "description": "笔者有台x230i，运行着archlinux。为了榨干其性能，内核使用了cachy os的内核。\n由于cachyos的内核只提供最低x86-64v3的预编译包，而x230的cpu属于x86-64v2，无法使用，本机编译经过裁剪的内核也需要一个小时，于是便想利用github actions去编译。\n用到的项目有：\nhighFreqSurfer/build-aur-action\nhighFreqSurfer/check-aur-package-update\ns0/git-publish-subdir-action\n成品可以参考highFreqSurfer/build-cachyos-kernel-arch-package-for-x230\nfeature有:\n检测aur包更新 检测到更新才进行构建 生产用于搭建仓库的repo db文件 推送编译产物到指定的仓库和分支 在/etc/pacman.conf加入你的仓库，如\n[repo] SigLevel = Optional TrustAll Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/build-cachyos-kernel-arch-package-for-x230/package 然后就可以通过pacman去安装仓库里的包\n",
+  "headline": "寒窗苦读16年不能找到体面工作，羞耻的应该是这个国家而不是这个人",
+  "name": "寒窗苦读16年不能找到体面工作，羞耻的应该是这个国家而不是这个人",
+  "description": " ",
   "keywords": [
-    "github actions", "linux"
+    "fk tg"
   ],
-  "articleBody": "笔者有台x230i，运行着archlinux。为了榨干其性能，内核使用了cachy os的内核。\n由于cachyos的内核只提供最低x86-64v3的预编译包，而x230的cpu属于x86-64v2，无法使用，本机编译经过裁剪的内核也需要一个小时，于是便想利用github actions去编译。\n用到的项目有：\nhighFreqSurfer/build-aur-action\nhighFreqSurfer/check-aur-package-update\ns0/git-publish-subdir-action\n成品可以参考highFreqSurfer/build-cachyos-kernel-arch-package-for-x230\nfeature有:\n检测aur包更新 检测到更新才进行构建 生产用于搭建仓库的repo db文件 推送编译产物到指定的仓库和分支 在/etc/pacman.conf加入你的仓库，如\n[repo] SigLevel = Optional TrustAll Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/build-cachyos-kernel-arch-package-for-x230/package 然后就可以通过pacman去安装仓库里的包\n",
-  "wordCount" : "25",
+  "articleBody": " ",
+  "wordCount" : "0",
   "inLanguage": "en",
-  "image": "https://highfreqsurfer.github.io/images/papermod-cover.png","datePublished": "2025-01-14T00:00:00Z",
-  "dateModified": "2025-01-14T00:00:00Z",
+  "image": "http://localhost:1313/images/papermod-cover.png","datePublished": "2025-04-26T00:00:00Z",
+  "dateModified": "2025-04-26T00:00:00Z",
   "author":{
     "@type": "Person",
     "name": "高强度冲浪选手"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://highfreqsurfer.github.io/posts/use_github_action_to_build_aur_package/"
+    "@id": "http://localhost:1313/posts/shame_of_this_country/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "^^,",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://highfreqsurfer.github.io/favicon.ico"
+      "url": "http://localhost:1313/favicon.ico"
     }
   }
 }
@@ -197,7 +153,7 @@ Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/bui
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://highfreqsurfer.github.io/" accesskey="h" title="^^, (Alt + H)">^^,</a>
+            <a href="http://localhost:1313/" accesskey="h" title="^^, (Alt + H)">^^,</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -229,54 +185,31 @@ Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/bui
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="https://highfreqsurfer.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://highfreqsurfer.github.io/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      利用github actions构建内核并发布到指定仓库
+      寒窗苦读16年不能找到体面工作，羞耻的应该是这个国家而不是这个人
     </h1>
-    <div class="post-meta"><span title='2025-01-14 00:00:00 +0000 UTC'>January 14, 2025</span>&nbsp;·&nbsp;高强度冲浪选手
+    <div class="post-meta"><span title='2025-04-26 00:00:00 +0000 UTC'>April 26, 2025</span>&nbsp;·&nbsp;高强度冲浪选手
 
 </div>
   </header> 
 
-  <div class="post-content"><p>笔者有台x230i，运行着archlinux。为了榨干其性能，内核使用了cachy os的内核。</p>
-<p><img loading="lazy" src="/posts/use_github_action_to_build_aur_package/neofetch.png"></p>
-<p>由于cachyos的内核只提供最低x86-64v3的预编译包，而x230的cpu属于x86-64v2，无法使用，本机编译经过裁剪的内核也需要一个小时，于是便想利用github actions去编译。</p>
-<p>用到的项目有：</p>
-<p>highFreqSurfer/build-aur-action</p>
-<p>highFreqSurfer/check-aur-package-update</p>
-<p>s0/git-publish-subdir-action</p>
-<p>成品可以参考highFreqSurfer/build-cachyos-kernel-arch-package-for-x230</p>
-<p>feature有:</p>
-<ul>
-<li>检测aur包更新</li>
-<li>检测到更新才进行构建</li>
-<li>生产用于搭建仓库的repo db文件</li>
-<li>推送编译产物到指定的仓库和分支</li>
+  <div class="post-content"><ul>
+<li></li>
 </ul>
-<p>在/etc/pacman.conf加入你的仓库，如</p>
-<pre tabindex="0"><code>[repo]
-SigLevel = Optional TrustAll
-Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/build-cachyos-kernel-arch-package-for-x230/package
-</code></pre><p>然后就可以通过pacman去安装仓库里的包</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://highfreqsurfer.github.io/tags/github-actions/">Github Actions</a></li>
-      <li><a href="https://highfreqsurfer.github.io/tags/linux/">Linux</a></li>
+      <li><a href="http://localhost:1313/tags/fk-tg/">Fk Tg</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="https://highfreqsurfer.github.io/posts/shame_on_this_country/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>寒窗苦读16年不能找到体面工作，羞耻的应该是这个国家而不是这个人</span>
-  </a>
-  <a class="next" href="https://highfreqsurfer.github.io/posts/elasticsearch_study_1/">
+  <a class="next" href="http://localhost:1313/posts/use_github_action_to_build_aur_package/">
     <span class="title">Next »</span>
     <br>
-    <span>elastics的学习-1</span>
+    <span>利用github actions构建内核并发布到指定仓库</span>
   </a>
 </nav>
 
@@ -285,7 +218,7 @@ Server = https://ghproxy.cn/https://raw.githubusercontent.com/highFreqSurfer/bui
   </main>
   
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://highfreqsurfer.github.io/">^^,</a></span> · 
+        <span>&copy; 2025 <a href="http://localhost:1313/">^^,</a></span> · 
 
     <span>
         Powered by
